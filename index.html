@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>干涉與繞射電子書</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/app.css?v=5">
+<meta name="description" content="高一物理「干涉與繞射」互動電子書：繩波疊加、水波干涉、雙狹縫干涉、單狹縫繞射與薄膜干涉，含互動模擬、即時回饋與追問助手。">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail" aria-label="目錄">
+    <a class="brand" href="#home">
+      <span class="logo"><svg viewBox="0 0 42 42" width="42" height="42" aria-hidden="true"><rect width="42" height="42" fill="#0f1420"/><g fill="#ff4b4b"><rect x="19" y="6" width="4" height="30" opacity="1"/><rect x="12" y="10" width="3" height="22" opacity=".6"/><rect x="27" y="10" width="3" height="22" opacity=".6"/><rect x="6" y="14" width="2" height="14" opacity=".3"/><rect x="34" y="14" width="2" height="14" opacity=".3"/></g></svg></span>
+      <span><b>干涉與繞射</b><small>高一物理・互動電子書</small></span>
+    </a>
+    <div class="progress"><div class="bar"><i id="prog-bar"></i></div><small><span>學習進度</span><span id="prog-txt" class="num"></span></small></div>
+    <div class="role" role="group" aria-label="檢視版本">
+      <button type="button" data-act="role" data-r="student">學生版</button>
+      <button type="button" data-act="role" data-r="teacher">教師版</button>
+    </div>
+    <nav class="toc" id="toc"></nav>
+    <div class="rail-foot">作答自動保存在這台裝置。<br>範例 v1.0・照片授權見素材庫</div>
+  </aside>
+  <div class="scrim" data-act="menu"></div>
+  <div class="main">
+    <header class="topbar">
+      <button class="iconbtn menu-btn" data-act="menu" aria-label="開啟目錄"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <div class="crumb" id="crumb"></div>
+      <span class="sp"></span>
+      <a class="iconbtn" href="#record" title="我的學習紀錄"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="3" width="8" height="4" rx="1"/><path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/></svg><span>紀錄</span></a>
+    </header>
+    <main class="reader" id="page"></main>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/icons.js?v=5"></script>
+<script src="assets/core.js?v=5"></script>
+<script src="assets/docs.js?v=5"></script>
+<script src="assets/sims.js?v=5"></script>
+<script src="assets/quizbank.js?v=5"></script>
+<script src="assets/content-learn.js?v=5"></script>
+<script src="assets/content-teach.js?v=5"></script>
+<script>bootBook();</script>
+</body>
+</html>
